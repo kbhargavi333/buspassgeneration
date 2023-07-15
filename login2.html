@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body {
+  background-image: url('https://i0.wp.com/www.residentswatch.in/wp-content/uploads/2018/09/Screen-Shot-2018-09-07-at-1.57.00-PM.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
+}
+            form{
+                text-align: center;
+                
+                background-color:cornsilk;
+                border-radius: 32px;
+                margin-left: 40%;
+                margin-top: 15%;
+                margin-right: 35%;
+                margin-bottom: 15%;
+            }
+            
+            #iname{
+                width: 220px;
+                height: 35px;
+            }
+            .font{
+                font-size: 40px;
+        
+            }
+            #filelabel{
+
+    font-size: 20px;
+    margin-left: -80x;
+
+
+}
+#fileinput{
+    text-align: center;
+    margin-left: 31%;
+    margin-right: 55%;
+    
+    }
+    .label1{
+        margin-bottom: 10px;
+    }
+        </style>
+    </head>
+    <body>
+        <form name=s action="payment.html" method=post>
+    </span><br><br>
+        <div class="form-inline">
+            <div class="form-group" >
+                <label for="passd" class="font" style="font-size:large">Type of Pass:</label><br><br>
+                <select name="passd" id="iname">
+                    <option>Select Pass Type</option>
+                    <option>General Pass</option>
+                    <option >Route Pass</option>
+                  </select>
+        
+            </div><br><br>
+            <div class="form-group">
+                <div class="custom-file">
+                    <label class="custom-file-label" class="label1" id="filelabel" for="adharfile1">Signature Receipt:  </label><br>
+                   <br> <input type="file" id="fileinput" class="custom-file-input" id="adharfile" name="adharfile1"><br>
+                </div>
+                <div>
+                    <button id="submit" class="btn btn-primary btn-lg float-right">SUBMIT</button>
+                </div>
+          <br>  </div>
+        </div>
+        </form>
+        </body>
+</html>

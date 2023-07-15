@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script src="scriptuser.js"></script>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .word{
+        color: blue;
+        margin-top: 5px;
+        padding-top: 9px;
+       
+        
+    }
+    .register{
+        text-align: center;
+    font-size: 40px;
+
+    }
+    
+    form{
+        
+        background-color:cornsilk;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+       
+      
+    }
+    .logo1{
+height: 55px;
+width:55px ;
+padding-top: 0px;
+text-align: center;
+display: block;
+
+
+
+    }
+    h3{
+        text-align: center;
+    }
+    body{
+        background-color: #f2f6ff;
+    }
+    .form{
+        border: solid 1px black;
+    }
+    .wrapper {
+  
+  display: flex;
+  display: inline-flex;
+  gap: 50px;
+  order: 3;
+  flex-wrap: wrap;
+
+}
+.p1{
+    color: white;
+    font-size: 25px;
+    border: 1px solid black;
+    background-color: #2b2a2c;
+
+    border-radius: 20px;
+    
+}
+
+.p1class{
+
+    
+    text-align: center;
+    
+}
+body{
+    background-color: aliceblue;
+}
+.left{
+    margin-left: -140px;
+}
+#route1{
+    margin-top: -100px;
+    margin-left: 230px;
+}
+
+#left{
+    float: left;
+}
+.right{
+    float:right;
+    margin-top: -57px;
+    margin-left: 120px;
+}
+.input1{
+    margin-left: -140px;
+}
+.input2{
+    margin-left: -70px;
+}
+.input3{
+    margin-left: -120px;
+}
+.output{
+    margin-left: 0px;
+}
+.input5{
+    margin-left: -5px;
+}
+.pass{
+margin-top: 22px;
+}
+#filelabel{
+    font-size: 20px;
+    margin-left: -210px;
+
+}
+#fileinput{
+    text-align: center;
+    margin-left: 45%;
+    margin-right: 55%;
+    margin-top: -32px;
+    }
+    #submit:hover {
+                font-size: 30px;
+                backdrop-filter: blur(10px);
+                
+                color: white;
+            }
+</style>
+    </head>
+    <body class="container-fluid">
+       
+<form name=frm action=insert.php method=post enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>
+               <h3><img class="logo1" align="center" src="https://upload.wikimedia.org/wikipedia/en/c/c4/Andhra_Pradesh_State_Road_Transport_Corporation_logo.png"></h3> 
+            </td>
+            <td>
+                <h2><p class="word">APSRTC STUDENT BUS PASS APPLICATION</p></h2>
+            </td>
+        </tr>
+    </table>
+    <form class="container-fluid"> 
+        <h1 class="register">Register</h1>
+    <div class="p1class"><span class="p1">Student Details</span><br><br>
+        <div class="form-inline">
+            <div class="form-group">
+                <label for="fname" style="font-size:large">User Name:</label><br>
+        <input class='input5' type="text" name="uname" placeholder="username"  style="width: 250px; height: 30px;"  > 
+        
+            </div>
+            <div class="form-group">
+                <label for="password" class="pass" style="font-size:large">Password:</label><br>
+                <input class='input'id="myinput" type="password" name="password" placeholder="password"  style="width: 250px; height: 30px;"  ><br>
+                <input type="checkbox" onclick="myFunction()">Show Password</div>
+            <div class="form-group">
+                <label for="cpassword" style="font-size:large">Confirm Password:</label><br>
+                <input class='input' type="password" name="cpassword" placeholder="password"  style="width: 250px; height: 30px;"  > </div>
+            
+          </div><br><br>
+<div class="form-inline">
+    <div class="form-group">
+        <label for="fname" style="font-size:large">First Name:</label><br>
+<input class='input' type="text" name="fname" placeholder="firstname"  style="width: 250px; height: 30px;"  > 
+
+    </div>
+    <div class="form-group">
+        <label for="mname" style="font-size:large">Middle Name:</label><br>
+        <input class='input' type="text" name="mname" placeholder="middlename"  style="width: 250px; height: 30px;"  ></div>
+    <div class="form-group">
+        <label for="lname" style="font-size:large">Last Name:</label><br>
+        <input class='input' type="text" name="lname" placeholder="lastname"  style="width: 250px; height: 30px;"  > </div>
+    
+  </div><br><br>
+  <div class="form-inline">
+    <div class="form-group">
+        <label for="fathername" style="font-size:large">Father Name:</label><br>
+<input class='input' type="text" name="fathername" placeholder="fathername"  style="width: 250px; height: 30px;"  > 
+
+    </div>
+    <div class="form-group">
+        <label for="mothername" style="font-size:large">Mother Name:</label><br>
+        <input class='input' type="text" name="mothername" placeholder="mothername"  style="width: 250px; height: 30px;" ></div>
+    <div class="form-group">
+        <label for="adharno" style="font-size:large">Student Aadhar:</label><br>
+        <input class='input' type="number" id="txtAadhar" name="adharno" placeholder="Adhar number"  style="width: 250px; height: 30px;" onblur="AadharValidate();"   > </div>
+    
+  </div><br><br>
+  <div class="form-inline">
+    <div class="form-group">
+        <label for="dob" style="font-size:large">Date Of Birth:</label><br>
+<input class='input' type="date" name="dob" placeholder="Date of Birth"  style="width: 250px; height: 30px;"  > 
+
+    </div>
+    <div class="form-group">
+        <label for="phone" style="font-size:large">Phone Number:</label><br>
+        <input class='input' type="tel" name="phone" placeholder="number"  style="width: 250px; height: 30px;" id="pno" onblur="pnovalidate();"  ></div>
+    <div class="form-group">
+        <label for="email" style="font-size:large">Email Id:</label><br>
+        <input class='input' type="email" name="email" placeholder="email"  style="width: 250px; height: 30px;"  > </div>
+    
+  </div><br><br>
+  <div class="form-inline">
+    <div class="gender">
+        <label for="Gender" style="font-size:large" >Gender:</label><br>
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female">Female</label>
+<input type="radio" id="male" name="Gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="other" name="Gender" value="other">
+<label for="other">Other</label></div>
+
+
+</div><br><br>  
+
+  
+<div class="p1class"><span class="p1">Institution Details</span><br><br>
+    <div class="form-inline">
+    
+        <div class="form-group">
+            <label for="iname" style="font-size:large">Institution Name:</label><br>
+            <select name="iname" id="iname">
+                <option>Institution Name</option>
+                <option value="vr">VR Siddartha Engineering College</option>
+                <option value="dhanekula" value="2">Dhanekula Institute of Engineering</option>
+                <option value="pvp">PVP Siddartha Engineering College</option>
+              </select>
+    
+        </div>
+        <div class="form-group">
+            <label for="icode" style="font-size:large">Institution Code:</label><br>
+            <input class='input' type="text" name="icode"  placeholder="Institutuion code"   style="width: 250px; height: 30px;"  ></div>
+        
+        </div>
+        <div><br></div>
+    <div class="form-inline" >
+        
+        
+        <div class="form-group">
+
+            <label for="icname" style="font-size:large">Course Name:</label><br>
+            <select name="icname" id="iname">
+                <option>Course Name</option>
+                <option>Computer Science and Engineering</option>
+                <option>Informtion Technology</option>
+                <option >Electrical and Communication </option>
+                <option >Electronics and  Instrumental </option>
+                <option >Civil Engineering</option>
+                <option >Mechanical Engineering</option>
+              </select>
+    
+        </div>
+        <div class="form-group">
+            <label for="ccode" style="font-size:large">Course Code:</label><br>
+            <input class='input' type="text" name="ccode" placeholder="course code"  style="width: 250px; height: 30px;"  ></div>
+        <br><br>
+    </div>
+    <div><br></div>
+    
+<div class="form-inline">
+
+    <div class="form-group" id="lef">
+        <label for="Ano" style="font-size:large">Admission Number:</label><br>
+<input class='input' type="text" name="Ano" placeholder="Admission Number"  style="width: 250px; height: 30px;"  > 
+
+    </div>
+    <div class="form-group">
+        <label for="iadd" style="font-size:large">Institution Address:</label><br>
+        <input class='input' type="text" name="iadd" placeholder="Address"  style="width: 250px; height: 30px;"  ></div>
+    
+</div><br>
+<br> 
+<div class="p1class"><span class="p1">Pass Details
+    
+</span><br><br>
+    <div class="form-inline">
+        <div class="form-group" >
+            <label for="passd" style="font-size:large">Type of Pass:</label><br>
+            <select name="passd" id="iname">
+                <option>Pass Type</option>
+                <option>General Pass</option>
+                <option >Route Pass</option>
+              </select>
+    
+        </div>
+        <div  class="form-group" >
+    
+            <label for="from" style="font-size:large">Route From :</label><br>
+            <input class="input" type="text" name="from"  placeholder="from">  </div>
+            <div  class="form-group" >
+    
+                <label for="to" style="font-size:large">Route To :</label><br>
+                <input class="input" type="text" name="to"  placeholder="to">  </div>
+           
+      
+        
+        </div>
+        <br><br>
+        <div class="p1class"><span class="p1">Upload Files</span><br><br>
+    <div class="form-inline">
+        <div class="form-group">
+                <div class="custom-file">
+                    <label class="custom-file-label" id="filelabel" for="adharfile">Tenth Certificate:</label>
+                    <input type="file" id="fileinput" class="custom-file-input" id="adharfile" name="adharfile" accept="application/pdf" /><br>
+                </div>
+            </div>
+        </div><br>
+        <div class="form-inline">
+            <div class="form-group">
+                    <div class="custom-file">
+                        <label class="custom-file-label" id="filelabel" for="adharfile"> Passport Photo:   </label>
+                        <input type="file" id="fileinput" class="custom-file-input" id="adharfile" name="adharfile" accept="application/pdf" /><br>
+                    </div>
+                </div>
+            </div><br>
+            <div></div>
+            <div class="form-inline">
+                <div class="form-group">
+                        <div class="custom-file">
+                            <label class="custom-file-label" id="filelabel" for="adharfile">Aadhar Card:  </label>
+                            <input type="file" id="fileinput" class="custom-file-input" id="adharfile" name="adharfile" accept="application/pdf" /><br>
+                        </div>
+                    </div>
+                </div><br> 
+                <div class="form-inline">
+                <div class="form-group">
+                        <div class="custom-file">
+                            <label class="custom-file-label" id="filelabel" for="adharfile1">Signature Receipt:  </label>
+                            <input type="file" id="fileinput" class="custom-file-input" id="adharfile" name="adharfile1" accept="application/pdf" /><br>
+                        </div>
+                    </div>
+                </div>
+            
+      </div>
+
+
+    <br>
+    <br><br>
+
+        <head><button id="submit" class="btn btn-primary btn-lg float-right">SUBMIT</button>
+            
+    </form>
+</body>
+</html>

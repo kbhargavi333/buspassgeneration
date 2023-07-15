@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    body{
+        background-color: cornsilk;
+    }
+    h2{
+        color: green;
+        text-align: center;
+    }
+    .input{
+        text-align: center;
+        font-size: large;
+    }
+    #submit{
+        text-align: center;
+    }
+    form{
+        text-align: center;
+    }
+    #add{
+        font-size: 40px;
+    }
+</style>
+</head>
+<body>
+   
+        <form name=frm action="insert1.php"  method=post>
+        <br><br>
+    <img src="https://www.delaneystudios.com.au/uploads/1/1/8/3/118392473/payment-successful_orig.png">
+    <br><br><br><br>
+    <div>
+     <label for="address" id="add" class="input"style="font-size:large"><h1>Enter Your Address</h1></label><br>
+                <textarea  class="input" type="text" name="address" placeholder="Address"   rows="4" cols="50" required>
+                </textarea>
+    </div><br>
+    <button id="submit" class="btn btn-primary btn-lg float-right" onclick="">SUBMIT</button>
+</form>
+</body>
+
+
+</html>

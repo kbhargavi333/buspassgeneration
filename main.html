@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus pass</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    body{
+        background-color: #DCDCDC;
+        
+    
+        position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    }
+         html{
+            scroll-behavior: smooth;
+        
+            }
+            #header{
+                background: rgba(0,0,0,0.8);
+                padding: 15px 0;
+                
+            }
+        .container{
+            width: 86%;
+            margin: 0 auto;
+        }
+        #header .container{
+            justify-content: space-between;
+            align-items: center;
+
+        }
+       
+        .main-nav ul li{
+            float: left;
+            padding: 1px 16px;
+  text-decoration: none;
+  font-size: 17px;
+        }
+        .main-nav ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-nav ul li a:hover{
+            font-size: 25px;
+  
+    border-radius: 36px;
+    color:white; 
+
+        }
+ 
+
+
+#sign{
+    border-radius: 25px;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 21px;
+}
+#login{
+    border-radius: 25px;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 10px;
+    font-size: 21px;
+   
+}
+#sign:hover {
+                font-size: 28px;
+            
+                
+                color: white;
+            }
+            #login:hover {
+                font-size: 28px;
+                backdrop-filter: blur(10px);
+                
+                color: white;
+            }
+            #section1 {
+  height: 600px;
+  background-color:#C0C0C0;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+}
+#section{
+    height: 800px;
+    background-color: gray;
+    background-image: url('https://i0.wp.com/www.residentswatch.in/wp-content/uploads/2018/09/Screen-Shot-2018-09-07-at-1.57.00-PM.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section img{
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    height: 80px;
+    width: 80px;
+    margin-right: 15px;
+    margin-left: 20px;
+margin-top: 20px;
+
+}
+.sent{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color:darkblue;
+margin: auto;
+margin-top: 25px;
+font-size: 3vw;
+}
+
+#section3 {
+  height: 600px;
+  background-color:#DCDCDC;
+
+}
+
+#section2 {
+  height: 500px;
+  background-color:#C0C0C0;
+
+}
+.carousel-inner img {
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-top: 50px;
+  }
+ 
+
+.column {
+  float: left;
+  width: 31%;
+  margin-bottom: 7px;
+  padding: 0 10px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.colum{
+  float: left;
+width: 500px;
+}
+.contain{
+    width: 70%;
+    margin-left: 130px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0px;
+  height: 250px;
+  padding-top: 20px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  margin-right: 0%;
+}
+
+
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width:78%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.imge{
+    padding-left: 130px;
+    height: 300px;
+    width: 80%;
+}
+
+</style>
+</head>
+<body>
+    
+<table>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a  href="#section0">Home</a></li>
+                    <li><a href="#section1">About Us</a></li>
+                    <li><a href="#section3">Contact Us</a></li>
+                    <li><a href="#section2">Buspass</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main" id="section0">
+        <table>
+            <tr>
+                <td>
+                    <img id="logo" src="https://upload.wikimedia.org/wikipedia/en/c/c4/Andhra_Pradesh_State_Road_Transport_Corporation_logo.png">
+                </td>
+                <td>
+                    <h1 class="sent">Online Bus Pass Generation<br>APSRTC</h1>
+                </td>
+                <td>
+                    <a href="form.html"> <button id="sign" class="btn btn-primary btn-lg float-right">SIGN UP</button></a> 
+                </td>
+                <td>
+                    <a href="login.html"> <button id="login" class="btn btn-primary btn-lg float-right">SIGN IN</button></a> 
+                </td>   
+            </tr>
+        </table>
+      </div>
+
+    <div class="main" id="section">
+        
+    </div>
+    <div class="main" id="section1">
+
+        <div class="about-section">
+            <h1>About Us</h1>
+            <p>We the students of VRSEC</p>
+            <p>Designed a website for the Busspass Generation in Online.</p>
+          </div>
+          <br><br><br>
+          <h2 style="text-align:center">Our Team</h2>
+          <br>
+
+  <div class="column">
+    <div class="card">
+    
+      <div class="container">
+        <h2>Kanugula Bhargavi</h2>
+        <p class="title">Backend Developer</p>
+        <p>Student At VRSEC</p>
+        <p>Information Technology</p>
+        <p>3rd Year</p>
+        <p>208W1A1219</p>
+        <p>208w1a1219@vrsec.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        
+      <div class="container">
+        <h2>Kanuri Dilip Kumar</h2>
+        <p class="title">Frontend Developer</p>
+        <p>Student At VRSEC</p></p>
+        <p>Information Technology</p>
+        <p>3rd Year</p>
+        <p>208w1a1220</p>
+        <p>208w1a1220@vrsec.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        
+      <div class="container">
+        <h2>Kasireddi Suvarna</h2>
+        <p class="title">Designer</p>
+        <p>Student At VRSEC</p>
+        <p>Information Technology</p>
+        <p>3rd Year</p>
+        <p>208W1A1221</p>
+        <p>208w1a1221@vrsec.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+ 
+     
+      </div>
+      <div class="main" id="section3">
+        <br><br>
+        <h1 style="text-align:center">Contact Us</h1>
+    <br><br>
+          <div class="colum">
+            
+                <img src="bhargavi2.jpeg" class="imge" >
+              <div class="contain">
+                <h2>Kanugula Bhargavi</h2>
+                <p class="title">Backend Developer</p>
+                <p>Student At VRSEC(I.T)</p></p>
+                <p>208w1a1219@vrsec.ac.in</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+         
+        
+          <div class="colum">
+            
+                <img src="dilip.jpeg" class="imge"  >
+              <div class="contain">
+                <h2>Kanuri Dilip Kumar</h2>
+                <p class="title">Frontend Developer</p>
+                <p>Student At VRSEC(I.T)</p></p>
+                <p>208w1a1220@vrsec.ac.in</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          
+          
+          <div class="colum">
+            
+                <img src="suvarna.jpeg" class="imge">
+              <div class="contain">
+                <h2>Kasireddi Suvarna</h2>
+                <p class="title">Designer</p>
+                <p>Student At VRSEC(I.T)</p>
+                <p>208w1a1221@vrsec.ac.in</p>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          
+        </div>
+    
+      <div class="main" id="section2">
+        
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+   
+    </ul>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="id.jpeg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="pass.jpeg" alt="Chicago" width="1100" height="500">
+      </div>
+      
+    </div>
+    
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+      </div>
+
+
+
+</body>
+</html>
+
